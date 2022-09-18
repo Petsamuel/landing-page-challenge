@@ -1,0 +1,315 @@
+@import url('https //fonts.googleapis.com/css family=Prata');
+
+*, *::before, *::after{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: var(--white);
+    font-family:"Prata", sans-serif;
+    
+}
+:root{
+    --white:white;
+    --gray:rgb(146, 146, 146);
+    --gray-background:#2e3038;
+    --title-color: white;
+    --h1-font-size: 50px;
+    --h2-font-size: 35px;
+    --h3-font-size: 32px;
+    --action-button:rgb(228, 216, 56);
+    --samsung:url("./Assets/Logos/Samsung.svg");
+    --tinder:url("./Assets/Logos/Tinder.svg");
+    --visa:url("./Assets/Logos/Visa.svg");
+    --walmart:url("./Assets/Logos/Walmart.svg");
+    --Hamburger-menu:url("./Assets/Hamburger Menu.svg");
+    --spense:url("./Assets/Spense.png");
+    --yelpcamp:url("./Assets/YelpCamp.png");
+    --github:url("./Assets/Social Icons/Github.svg");
+    --twitter:url("./Assets/Social Icons/Twitter.svg");
+    --linkedin:url("./Assets/Social Icons/LinkedIn.svg");
+    --jpmorgan:url("./Assets/Logos/JP Morgan.svg");
+    --verixon:url("./Assets/Logos/Verizon.svg")
+
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+h1{
+font-size:var(--h1-font-size);
+}
+h2{
+    font-size:var(--h2-font-size);
+}
+@media screen and (max-width:1440px) {
+    header{
+        margin:2em 6em;
+        
+    }
+    .nav-container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-list{
+        display:flex;
+        list-style: none;
+    }
+    .navbrand{
+        font-size:20px;
+    }
+    .brand-logo{
+        width: 85%;
+        transition: all 0.35s ease;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    li{
+        list-style:none;
+
+    }
+    ul li{
+        padding:15px;
+        color:var(--gray)
+    }
+    .action-btn{
+        background-color: var(--action-button);
+        padding:25px;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .navmenu{
+        display:none;
+    }
+    .content-1{
+        padding: 6em;
+        align-items: center;
+    }
+    .intro-text>h1{
+        font-size: xx-large;
+
+    }
+    .intro-paragraph{
+        color:var(--gray);
+        padding-bottom:4%;
+       
+    }
+    .company-logo{
+        /* width:100%; */
+        place-items: center;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 15px;
+        
+    }
+    .brand-logo{
+        margin: 20% 0%; 
+    }
+    .brand1{
+        content:var(--walmart);
+    }
+    .brand2{
+        content:var(--jpmorgan);
+       
+    }.brand3{
+        content:var(--visa);
+       
+    }.brand4{
+        content:var(--tinder);
+    }.brand5{
+        content:var(--samsung);
+    }.brand6{
+        content:var(--verixon);  
+    }
+    .section-2{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 19px;
+    }
+   .content-image{
+        content: var(--spense);
+        width:100%;
+        
+    }
+    .content-image2{
+        content: var(--yelpcamp);
+        width:100%;
+        grid-column: 2;
+    }
+    .spense{
+        margin:5% 0px;
+        grid-row: 2;
+    } 
+    .spense>p{
+        color:var(--gray);
+    }
+    .title{
+        font-size: 2em;
+       
+    }
+    
+    .yelcamp>p{
+        color:var(--gray);
+    }
+
+    .yelcamp{
+        margin:5% 0px;
+    }
+    .content-2{
+        background-color: var(--gray-background);
+    }
+    .content-3{
+        margin:2em 0em
+    }
+    
+    .footer-action-button{
+        padding-top:1.5em;
+    }
+    .action-btn{
+        background-color: var(--action-button);
+        padding:1em;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .socials>i{
+        padding:0px 5px;
+    }
+    .twitter-social{
+        content:var(--twitter);
+    }
+    .linkedin-social{
+        content:var(--linkedin);
+    }
+    .github-social{
+        content:var(--github);
+    }
+    
+}
+
+@media screen and (max-width:795px), (max-width:375px) {
+    header{
+        margin: 0px;
+        width:100%;
+    }
+    .nav-container{
+        display:flex;
+        flex-direction: row;
+        margin: 1em;
+        justify-content: space-between;
+    }
+    .nav-menu{
+        display:none;
+    }
+    .nav-list{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .navmenu{
+        display:block;
+        content: var(--Hamburger-menu);
+        width:7%;
+    }
+    .header-action-button{
+        display:none;
+    }
+    .content-1{
+        padding: 1rem;
+        align-items: center;
+    }
+     .intro-text{
+        width:100%;
+        font-size: large;
+    }
+    .intro-text>h1{
+        margin-top:2em;
+    }
+    .intro-paragraph{
+        color:var(--gray);
+        padding:4% 0px;
+        width:fit-content;
+    }
+    
+    .company-logo{
+        width:100%;
+        place-items: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding:2em 0em;
+    }
+    .brand-logo{
+        margin: 5%;
+        width:50%;
+    }
+    .brand1{
+        content:var(--walmart);
+       
+    }
+    .brand2{
+        content:var(--jpmorgan);
+       
+    }.brand3{
+        content:var(--visa);
+       
+    }.brand4{
+        content:var(--tinder);
+    }.brand5{
+        content:var(--samsung);
+    }.brand6{
+        content:var(--verixon);  
+    }
+    .section-2{
+        display:flex;
+       flex-direction: column;
+    }
+    .content-image{
+        content: var(--spense);
+        width:100%;
+    }
+    .content-image2{
+        content: var(--yelpcamp);
+        width:100%;
+    }
+    .spence{
+        margin:15% 0px;
+    }
+    .yelcamp{
+        margin:15% 0px;
+    }
+    .content-2{
+        background-color: var(--gray-background);
+    }
+    .content-3{
+        margin:2em 0em
+    }
+    .footer-action-button{
+        padding-top:1.5em;
+    }
+    .action-btn{
+        background-color: var(--action-button);
+        padding:10px;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .socials>i{
+        padding:0px 5px;
+    }
+    .twitter-social{
+        content:var(--twitter);
+    }
+    .linkedin-social{
+        content:var(--linkedin);
+    }
+    .github-social{
+        content:var(--github);
+    }
+
+}
