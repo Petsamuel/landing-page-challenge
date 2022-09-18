@@ -10,13 +10,15 @@ body{
     color: var(--white);
     font-family:"Prata", sans-serif;
     
+}p{
+    padding: 1em 0em;
 }
 :root{
     --white:white;
     --gray:rgb(146, 146, 146);
     --gray-background:#2e3038;
     --title-color: white;
-    --h1-font-size: 50px;
+    --h1-font-size: 250%;
     --h2-font-size: 35px;
     --h3-font-size: 32px;
     --action-button:rgb(228, 216, 56);
@@ -43,6 +45,7 @@ font-size:var(--h1-font-size);
 }
 h2{
     font-size:var(--h2-font-size);
+    color:var(--white)
 }
 @media screen and (max-width:1440px) {
     header{
@@ -87,16 +90,12 @@ h2{
         display:none;
     }
     .content-1{
-        padding: 6em;
+        padding: 3em 6em;
         align-items: center;
-    }
-    .intro-text>h1{
-        font-size: xx-large;
-
     }
     .intro-paragraph{
         color:var(--gray);
-        padding-bottom:4%;
+        padding-bottom:10em;
        
     }
     .company-logo{
@@ -104,11 +103,12 @@ h2{
         place-items: center;
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
-        gap: 15px;
+        gap: 10px;
         
     }
     .brand-logo{
-        margin: 20% 0%; 
+        margin: 3em 0em; 
+        width:min-content;
     }
     .brand1{
         content:var(--walmart);
@@ -130,12 +130,11 @@ h2{
         display:grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        gap: 19px;
+        gap: 4em;
     }
    .content-image{
         content: var(--spense);
         width:100%;
-        
     }
     .content-image2{
         content: var(--yelpcamp);
@@ -143,15 +142,11 @@ h2{
         grid-column: 2;
     }
     .spense{
-        margin:5% 0px;
+        margin:3em 0em;
         grid-row: 2;
     } 
     .spense>p{
         color:var(--gray);
-    }
-    .title{
-        font-size: 2em;
-       
     }
     
     .yelcamp>p{
@@ -159,7 +154,7 @@ h2{
     }
 
     .yelcamp{
-        margin:5% 0px;
+        margin:3em 0em;
     }
     .content-2{
         background-color: var(--gray-background);
@@ -176,6 +171,13 @@ h2{
         padding:1em;
         text-decoration: none;
         color:#000;
+        
+    }
+    .grid-2{
+        display:grid;
+        gap:10px;
+        grid-template-columns: auto auto;
+        color: var(--gray);
         
     }
     .socials>i{
@@ -215,7 +217,6 @@ h2{
     .navmenu{
         display:block;
         content: var(--Hamburger-menu);
-        width:7%;
     }
     .header-action-button{
         display:none;
@@ -236,6 +237,10 @@ h2{
         padding:4% 0px;
         width:fit-content;
     }
+    .grid-2{
+        display:flex;
+        flex-direction: column;
+    }
     
     .company-logo{
         width:100%;
@@ -246,11 +251,9 @@ h2{
     }
     .brand-logo{
         margin: 5%;
-        width:50%;
     }
     .brand1{
         content:var(--walmart);
-       
     }
     .brand2{
         content:var(--jpmorgan);
